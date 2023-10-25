@@ -1,0 +1,8 @@
+<ul>
+    <li *ngFor="let product of ListProduct">
+        <p>libelle: {{ product.libelle }}</p>
+        <p>Prix Unitaire: {{ product.prixunitaire }}</p>
+        <p>Taux TVA: {{ product.tauxTva }}</p>
+        <button (click)="calculate(product.libelle)">Calculer</button>
+    </li>
+</ul>
